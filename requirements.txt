@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+line-bot-sdk
+pillow
+numpy
+tensorflow-cpu==2.13.0
+tf-keras==2.13.0
