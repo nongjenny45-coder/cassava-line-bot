@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+line-bot-sdk
+pillow
+numpy
+tensorflow-cpu
+tf-keras
