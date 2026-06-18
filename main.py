@@ -23,8 +23,8 @@ app = FastAPI()
 # ==============================================================================
 # 🔑 พิกัดฐานข้อมูลรหัสผ่านความปลอดภัยระบบ Messaging API ฉบับแก้ไขบั๊กมหาศาล (Hardcoded)
 # ==============================================================================
-# ดำเนินการฝังสายคีย์รหัสผ่าน LINE Channel Access Token ตัวของแท้สัญชาติสากลที่คุณดึงมาจากแท็บ Messaging API แน่นหนามหาศาล
-LINE_CHANNEL_ACCESS_TOKEN = "y9RFlhgEx7LMqlqO971p/bLVSJj/6T+lthutlJeMaK36OLZoeND14EVS3j8OpwxfzgNm2hB2IQZhyYSaQ/rXdZp5YUyZhBrQgbDl9fKpx5DPQH0G1ZXbkVKp10GB5ANa1ML52a/7Fyoh/C/nvAWGRQdB04t89/1O/w1cDnyiFU="
+# ดำเนินการฝังสายคีย์รหัสผ่าน LINE Channel Access Token ตัวของแท้สัญชาติสากลที่คุณเพิ่งสร้างใหม่ล่าสุด
+LINE_CHANNEL_ACCESS_TOKEN = "y9RFlhgEx7LMqlqO971p/bLVSJj/6T+lthutlJeMaK36OLZoeND14EVS3j8OpwxfzgNm2hB2IQZhyYSaQ/rXdZp5YUyZhBrQgbDl9fKpx5DPQH0G1ZXbkVKp10GB5ANa1ML52a/7Fyoh/C/nvAWGRQdB04t89/1O/w1cDnyilFU="
 
 # ดำเนินการฝังสายคีย์รหัสความลับแชนเนล (Channel Secret) ตัวจริงเลขตรงตามแชนเนลล่าสุดบอท AI ตรวจโรคพืชของคุณ 100%
 LINE_CHANNEL_SECRET = "98a9f06327a40085d80295c5345c3766"
@@ -35,7 +35,7 @@ handler = WebhookHandler(LINE_CHANNEL_SECRET)
 # ==============================================================================
 # 🧠 โครงสร้างคอมไพล์ระบบหน่วยความจำสมองกล AI 4 คลาส (4-Class Inference Architecture)
 # ==============================================================================
-# ดึงโมเดล h5 มาอ่านค่าดัชนีโดยตัดโรคไรเขียวพืชออกไปถาวรตามภาพรูปภาพประวัติศาสตร์ image_87a749.png ของคุณ
+# ดึงโมเดล h5 มาอ่านค่าดัชนีโดยตัดโรคไรเขียวพืชออกไปถาวรตามภาพรูปภาพประวัติศาสตร์ของคุณ
 model = tf_keras.models.load_model("keras_model.h5", compile=False)
 
 # ลำดับรายชื่อคลาส 4 ตัวแปรหลักอ้างอิงตรงตามผังโครงสร้างโมเดลล่าสุดของคุณเป๊ะๆ 100% มหาศาล
